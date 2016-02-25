@@ -1,0 +1,19 @@
+name:                LYAH-examples
+version:             0.1.0.0
+synopsis:            Examples and explority code from Learn You A Haskell book
+description:         Please see README.md
+homepage:            http://github.com/user/my-project#readme
+license:             BSD3
+license-file:        LICENSE
+author:              Randall Alexander
+maintainer:          nospam@nospam.com
+copyright:           2016 Randall Alexander
+category:            Web
+build-type:          Simple
+cabal-version:       >=1.10
+
+executable LYAH-examples
+  hs-source-dirs:      src
+  main-is:             Main.hs
+  default-language:    Haskell2010
+  build-depends:       base >= 4.7 && < 5
