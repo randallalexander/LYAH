@@ -3,6 +3,9 @@ import Data.Function (on)
 import Data.Char as Char
 import qualified Data.Map as Map
 import qualified Data.Set as Set
+import qualified Geometry.Sphere as Sphere  
+import qualified Geometry.Cuboid as Cuboid  
+import qualified Geometry.Cube as Cube 
 
 intersperseMonkey = List.intersperse '.' "MONKEY"
 concatFlatten = List.concat [[3,4,5],[2,3,4],[2,1,1]]
@@ -38,3 +41,5 @@ text1 = "I just had an anime dream. Anime... Reality... Are they so different?"
 text2 = "The old man left his garbage can out and now his trash is all over my lawn!" 
 set1 = Set.fromList text1
 set2 = Set.fromList text2
+
+sphereVol = Sphere.volume 4.3
