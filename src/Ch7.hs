@@ -162,5 +162,9 @@ instance Functor Tree where
     fmap f EmptyTree = EmptyTree
     fmap f (Node x leftsub rightsub) = Node (f x) (fmap f leftsub) (fmap f rightsub)
 
+-- infixr 5 :-:
+-- data List a = Empty | a :-: (List a) deriving (Show, Read, Eq, Ord)
+-- let a = 3 :-: 4 :-: 5 :-: Empty
+
 -- fmap (*2) EmptyTree
 -- fmap (*4) (foldr treeInsert EmptyTree [5,7,3,2,1,7])
