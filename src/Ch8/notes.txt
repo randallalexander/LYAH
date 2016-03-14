@@ -1,0 +1,8 @@
+ctl-D = eoln
+stack exec runghc <file name> = run file
+stack exec ghc = make file
+
+TODO::
+$ ./todo view todo.txt
+$ ./todo add todo.txt "Pick up children from drycleaners" 
+$ ./todo remove todo.txt 2
